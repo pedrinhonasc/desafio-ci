@@ -2,7 +2,7 @@ steps:
 #executo o test unitario
   - id: "Rodando unit test"
     name: "gcr.io/cloud-builders/go:alpine"
-    args: ["go", "test", ".", "-v"]
+    args: ["test", ".", "-v"]
     env: ['PROJECT_ROOT=desafio-ci']
 
   # - id: "Build imagem"
