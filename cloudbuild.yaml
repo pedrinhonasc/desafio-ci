@@ -2,8 +2,8 @@ steps:
 #executo o test unitario
   - id: "Rodando unit test"
     name: "gcr.io/cloud-builders/go:alpine"
-    args: ["test", "-v"]
-    env: ["$GOPATH=/workspace"]
+    args: ["go", "test", ".", "-v"]
+    # env: ["$GOPATH=/workspace"]
 
   # - id: "Build imagem"
   #   name: "gcr.io/cloud-builders/docker"
