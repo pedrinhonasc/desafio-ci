@@ -3,7 +3,7 @@ steps:
   - id: "Rodando unit test"
     name: "gcr.io/cloud-builders/go:alpine"
     args: ["go", "test", ".", "-v"]
-    # env: ["$GOPATH=/workspace"]
+    env: ['PROJECT_ROOT=desafio-ci']
 
   # - id: "Build imagem"
   #   name: "gcr.io/cloud-builders/docker"
